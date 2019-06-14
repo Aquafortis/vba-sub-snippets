@@ -3,7 +3,6 @@ Sub MergeAllSheets()
     ' Keep top row of first sheet only
     Dim S As Integer
     Dim cRng As Range
-    'On Error Resume Next
     Sheets.Add(Before:=Sheets(1)).Name = "Merged"
     Sheets(2).Range("A1").EntireRow.Copy _
     Sheets(1).Range("A1")
